@@ -73,6 +73,9 @@ def main():
     print("\nTransações registradas:")
     carteira.exibir_transacoes()
 
+    print("\nFiltrar por Alimentação")
+    carteira.filtrar_por_categoria("Alimentação")
+
     print("\nResumo geral:")
     carteira.resumo_geral()
 
