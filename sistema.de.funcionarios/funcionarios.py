@@ -8,3 +8,14 @@ class Funcionario (ABC):
     @abstractmethod
     def calcular_bonus() -> float:
         pass
+    
+    def get_nome(self) -> str:
+        return self.__nome
+    
+    def get_salario(self) -> float:
+        return self.__salario
+    
+    def set_salario(self, salario: float):
+        if salario > 0.0:
+            self.__salario = salario
+
