@@ -19,3 +19,6 @@ class Funcionario (ABC):
         if salario > 0.0:
             self.__salario = salario
 
+class FuncionarioComum(Funcionario):
+    def calcular_bonus(self) -> float:
+        return self.get_salario * 0.1
