@@ -1,9 +1,9 @@
 import pytest
-from modules.funcionarios import FuncionarioComum, Gerente
+from funcionarios import FuncionarioComum, Gerente
 
 def test_funcionario_comum_calcula_bonus():
     funcionario = FuncionarioComum("João", 3000.00)
-    assert funcionario.calcular_bonus() == 3000.00
+    assert funcionario.calcular_bonus() == 300.00
 
 def test_gerente_calcula_bonus():
     gerente = Gerente("Maria", 5000.00, 500.00)
